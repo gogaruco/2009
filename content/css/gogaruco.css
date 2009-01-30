@@ -81,6 +81,8 @@ img {
   border: none;
 }
 
+/**********/
+
 #container {
   min-height: 100%;
   height: auto !important;
@@ -94,11 +96,11 @@ img {
 
 #header {
   position: relative;
-  /*height: 3em;*/
+  height: 270px;
   background-color: white;
 }
 
-#header a {
+#header a.home {
   display: block;
   position: absolute;
   left: 0;
@@ -110,8 +112,8 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 85%;
-  /*height: 900px;*/
+  width: 86%;
+  height: 82px;
   background: #00a8e7;
 }
 
@@ -122,19 +124,31 @@ img {
 
 #nav li {
   float: left;
-  width: 135px;
+  width: 16.6%;
   height: 82px;
 }
 
 #nav li + li {
+  margin-left: -1px;
   border-left: 1px solid white;
 }
 
 #nav li a {
   display: block;
-  width: 135px;
-  height: 82px;
+  height: 100%;
+  padding-right: 1em;
+  color: white !important;
+  font-size: 150%;
+  text-align: right;
+  line-height: 120px;
 }
+
+.blue0 { background-color: #66cbf1; }
+.blue1 { background-color: #4cc2ee; }
+.blue2 { background-color: #33b9eb; }
+.blue3 { background-color: #19b1e9; }
+.blue4 { background-color: #00a8e7; }
+.blue5 { background-color: #00a8e7; }
 
 /**********/
 
