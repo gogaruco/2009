@@ -9,13 +9,19 @@ filter:    erb
   <title>Golden Gate Ruby Conference</title>
   <link href="css/gogaruco.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
+<% pages = %w( Registration Speakers Schedule Sponsors Lodging ) %>
 <body id="index">
   <div id="container">
     <div id="header">
       &nbsp;
     </div>
     <div id="nav">
-      &nbsp;
+      <ul>
+        <li><a>Home</a></li>
+        <% pages.each do |page| -%>
+          <li><a href="/<%= page.downcase %>.html"><%= page %></a></li>
+        <% end -%>
+      </ul>
     </div>
     <div id="main">
       <h1>Golden Gate Ruby Conference</h1>
