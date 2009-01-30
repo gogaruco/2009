@@ -13,18 +13,17 @@ filter:    erb
 <body id="index">
   <div id="container">
     <div id="header">
-      &nbsp;
-    </div>
-    <div id="nav">
-      <ul>
-        <li><a>Home</a></li>
-        <% pages.each do |page| -%>
-          <li><a href="/<%= page.downcase %>.html"><%= page %></a></li>
-        <% end -%>
-      </ul>
+      <img src="/images/gogaruco_banner.png">
+      <div id="nav">
+        <ul>
+          <li><a>Home</a></li>
+          <% pages.each do |page| -%>
+            <li><a href="/<%= page.downcase %>.html"><%= page %></a></li>
+          <% end -%>
+        </ul>
+      </div>
     </div>
     <div id="main">
-      <h1>Golden Gate Ruby Conference</h1>
       <%= @content %>
     </div>
     <div id="sponsors">

@@ -49,6 +49,9 @@ blockquote, q {
 
 /********** our styles **********/
 
+/* golden ratios: 100%  :  61.8%   38.2%  :  23.6%   14.6% */
+/* widths:        950px : 587.1px 362.9px : 224.2px 138.7px  */
+
 /* GG Int Orange: #F04A00 */
 
 html, body {
@@ -87,18 +90,50 @@ img {
   background-color: white;
 }
 
+/**********/
+
 #header {
-  height: 3em;
+  position: relative;
+  /*height: 3em;*/
   background-color: white;
 }
 
-/**********/
+#header a {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 340;
+}
 
 #nav {
-  float: left;
-  width: 14%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 85%;
   /*height: 900px;*/
-  background: white;
+  background: #00a8e7;
+}
+
+#nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+#nav li {
+  float: left;
+  width: 135px;
+  height: 82px;
+}
+
+#nav li + li {
+  border-left: 1px solid white;
+}
+
+#nav li a {
+  display: block;
+  width: 135px;
+  height: 82px;
 }
 
 /**********/
@@ -107,7 +142,7 @@ img {
   float: left;
   width: 62%;
   height: 100%;
-  /*margin-left: 14%;*/
+  margin-left: 14%;
 }
 
 #main > .inner {
