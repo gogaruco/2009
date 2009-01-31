@@ -9,15 +9,15 @@ filter:    erb
   <title>Golden Gate Ruby Conference</title>
   <link href="css/gogaruco.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
-<% pages = %w( Registration Speakers Schedule Sponsors Lodging Community) %>
+<% pages = %w( Registration Speakers Schedule Lodging Sponsors Community) %>
 <body id="index">
   <div id="container">
     <div id="header">
-      <img src="/images/gogaruco_banner.png">
-      <div id="nav">
+      <a class="home" href="/index.html"><img src="/images/gogaruco_banner.png"></a>
+      <div class="nav">
         <ul>
           <% pages.each_with_index do |page,i| -%>
-            <li class="blue<%= i %>"><a href="/<%= page.downcase %>.html"><%= page %></a></li>
+            <li><a class="blue<%= i %>" href="/<%= page.downcase %>.html"><%= page.upcase %></a></li>
           <% end -%>
         </ul>
       </div>
@@ -37,7 +37,18 @@ filter:    erb
     <div class="push"></div>
   </div>
   <div id="footer">
-    <p>&copy; 2009 Golden Gate Ruby Conference</p>
+    <p class="logo"><img src="/images/footer_logo.png"></p>
+    <p class="copy">
+      &copy; 2009 golden gate ruby conference, llc &bull;
+      logo design by <a href="http://codefluency.com/">bruce williams</a>
+    </p>
+    <div class="nav">
+      <ul>
+        <% pages.each_with_index do |page,i| -%>
+          <li class="blue<%= i %>">&nbsp;</li>
+        <% end -%>
+      </ul>
+    </div>
   </div>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

@@ -49,8 +49,8 @@ blockquote, q {
 
 /********** our styles **********/
 
-/* golden ratios: 100%  :  61.8%   38.2%  :  23.6%   14.6% */
-/* widths:        950px : 587.1px 362.9px : 224.2px 138.7px  */
+/* golden ratios: 100%  :  62%   38%   :  24%   14%   */
+/* widths:        950px : 589px  361px : 228px 133px  */
 
 /* GG Int Orange: #F04A00 */
 
@@ -61,24 +61,15 @@ html, body {
 }
 
 body {
-  background-color: #F09C00;
+  background-color: #D3CFBD;
 }
 
 a {
-  color: #F04A00;
   text-decoration: none;
-}
-
-a:hover, a:active {
-  color: #F09C00;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lucida Grande", "Arial", "Sans-Serif";
-}
-
-img {
-  border: none;
 }
 
 /**********/
@@ -88,7 +79,7 @@ img {
   height: auto !important;
   height: 100%;
   width: 950px;
-  margin: 0 auto -2em auto;
+  margin: 0 auto -94px auto;
   background-color: white;
 }
 
@@ -102,45 +93,52 @@ img {
 
 #header a.home {
   display: block;
+  overflow: visible;
   position: absolute;
   left: 0;
   top: 0;
-  width: 340;
+  width: 340px;
 }
 
-#nav {
+.nav {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 86%;
+  width: 816px;
   height: 82px;
   background: #00a8e7;
 }
 
-#nav ul {
+.nav ul {
   overflow: hidden;
   list-style: none;
 }
 
-#nav li {
+.nav li {
   float: left;
-  width: 16.6%;
-  height: 82px;
+  width: 136px;
+  height: 100%;
 }
 
-#nav li + li {
+.nav li + li {
   margin-left: -1px;
   border-left: 1px solid white;
 }
 
-#nav li a {
+.nav li a {
   display: block;
-  height: 100%;
+  height: 32px;
+  padding-top: 50px;
   padding-right: 1em;
-  color: white !important;
-  font-size: 150%;
+  color: white;
+  font-size: 125%;
+  font-weight: bold;
   text-align: right;
-  line-height: 120px;
+}
+
+.nav li a:hover {
+  background-color: #333;
+  color: #00a8e7;
 }
 
 .blue0 { background-color: #66cbf1; }
@@ -259,20 +257,40 @@ div.section span {
 
 /**********/
 
+.push {
+  clear: both;
+  height: 94px;
+  padding-top: 0;
+}
+
 #footer {
-  height: 2em;
+  position: relative;
+  height: 82px;
   width: 950px;
   margin: 0 auto;
+  padding-top: 12px;
   background-color: white;
 }
 
 #footer p {
+  padding-top: 2px;
+  padding-right: 19px;
   font-size: 1.2em;
-  text-align: center;
+  text-align: right;
+  color: #999;
 }
 
-.push {
-  clear: both;
-  height: 2em;
-  padding-top: 2em;
+#footer a:link, #footer a:hover, #footer a:active, #footer a:visited {
+  color: #666;
+}
+
+#footer .nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 31px;
+}
+
+#footer .nav li {
+  height: 31px;
 }
