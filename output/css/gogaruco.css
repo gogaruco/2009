@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header {
   position: relative;
-  height: 270px;
+  height: 301px;
   background-color: white;
 }
 
@@ -96,8 +96,15 @@ h1, h2, h3, h4, h5, h6 {
   overflow: visible;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 31px;
   width: 340px;
+}
+
+.bubble {
+  position: absolute;
+  top: 31px;
+  right: 31px;
+  
 }
 
 .nav {
@@ -137,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav li a:hover {
-  background-color: #333;
+  background-color: #543;
   color: #00a8e7;
 }
 
@@ -158,15 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main > .inner {
-  margin: 2em;
-}
-
-#main > h1 {
-  display: block;
-  width: 433px;
-  height: 284px;
-  background: white url("/images/gogaruco_logo.png") top left no-repeat;
-  text-indent: -9999em;
+  margin: 2em 2em 2em 0;
 }
 
 #main h2 {
@@ -175,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2em;
 }
 
-.text, .body-text {
+.bubble, .text, .body-text {
   font-size: 1.5em;
   line-height: 1.75em;
 }
@@ -204,15 +203,15 @@ p.center {
 
 #sponsors {
   float: right;
-  width: 24%;
-  /*width: 38%;*/
+  width: 228px%;
   height: 100%;
-/*  margin-left: -2px;
-  border-left: 2px solid #F09C00;
-*/}
+}
 
-#sponsors > .inner {
-  margin: 0 5px;
+#sponsors .inner {
+  margin: 9px;
+  border: 1px solid #aea78c;
+  padding: 4px;
+  width: 200px;
 }
 
 #sponsors h2 {

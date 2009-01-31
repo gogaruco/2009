@@ -12,8 +12,16 @@ filter:    erb
 <% pages = %w( Registration Speakers Schedule Lodging Sponsors Community) %>
 <body id="index">
   <div id="container">
+
     <div id="header">
       <a class="home" href="/index.html"><img src="/images/gogaruco_banner.png"></a>
+      <div class="bubble">
+        <ul>
+          <li class="in0">April 17-18, 2009</li>
+          <li class="in1">San Francisco, California</li>
+          <li class="in2">at the historic <a href="http://www.cafedunord.com/?page=directions">Swedish American Hall</a></li>
+        </ul>
+      </div>
       <div class="nav">
         <ul>
           <% pages.each_with_index do |page,i| -%>
@@ -22,6 +30,7 @@ filter:    erb
         </ul>
       </div>
     </div>
+
     <div id="main">
       <%= @content %>
     </div>
