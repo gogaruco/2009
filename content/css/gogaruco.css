@@ -68,6 +68,14 @@ a {
   text-decoration: none;
 }
 
+a:link, a:visited {
+  color: #A33400;
+}
+
+a:hover, a:active {
+  color: #A36A00;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lucida Grande", "Arial", "Sans-Serif";
 }
@@ -174,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #main h2 {
   margin: 1em 0 0.5em 0;
-  color: #a33400;
+  color: #00a8e7;
   font-size: 2em;
 }
 
