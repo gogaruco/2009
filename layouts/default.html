@@ -25,7 +25,8 @@ filter:    erb
       <div class="nav">
         <ul>
           <% pages.each_with_index do |page,i| -%>
-            <li><a class="blue<%= i %>" href="/<%= page.downcase %>.html"><%= page.upcase %></a></li>
+            <li><a class="blue<%= i %><%= @page.name == page.downcase ? " current" : "" %>"
+                   href="/<%= page.downcase %>.html"><%= page.upcase %></a></li>
           <% end -%>
         </ul>
       </div>
@@ -34,17 +35,25 @@ filter:    erb
     <div id="main">
       <%= @content %>
     </div>
+
     <div id="sponsors">
       <div class="inner">
         <h2>Sponsors</h2>
-        <div class="section"><span>Platinum</span></div>
+        <h3>Platinum</h3>
         <ul>
+          <li><a href="http://example.com/"><img src="images/logos/fnord.gif" alt="FNORD"></a></li>
+          <li><a href="http://example.com/"><img src="images/logos/fnord.gif" alt="FNORD"></a></li>
+        </ul>
+        <h3>Gold</h3>
+        <ul>
+          <li><a href="http://example.com/"><img src="images/logos/fnord.gif" alt="FNORD"></a></li>
           <li><a href="http://example.com/"><img src="images/logos/fnord.gif" alt="FNORD"></a></li>
         </ul>
       </div>
     </div>
     <div class="push"></div>
   </div>
+
   <div id="footer">
     <p class="logo"><img src="/images/footer_logo.png"></p>
     <p class="copy">

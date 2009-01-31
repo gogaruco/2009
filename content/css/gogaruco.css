@@ -148,6 +148,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #00a8e7;
 }
 
+.nav li a.current {
+  color: yellow;
+}
+
 .blue0 { background-color: #66cbf1; }
 .blue1 { background-color: #4cc2ee; }
 .blue2 { background-color: #33b9eb; }
@@ -208,18 +212,26 @@ p.center {
 }
 
 #sponsors .inner {
-  margin: 9px;
-  border: 1px solid #aea78c;
-  padding: 4px;
-  width: 200px;
+  margin: 18px 18px 18px 0;
+  border: 1px solid #dedede;
+  width: 208px;
 }
 
 #sponsors h2 {
-  margin: 1em 20px 0.5em 0;
-  color: #a33400;
-  /*background-color: #7f0000;*/
+  margin: 1em 0;
+  color: #aea78c;
   font-size: 2em;
-  text-align: right;
+  text-align: center;
+}
+
+#sponsors h3 {
+  margin: 1em 0;
+  padding: 5px 0;
+  background-color: #f7f6f3;
+  color: #666666;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
 }
 
 #sponsors ul {
