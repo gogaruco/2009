@@ -1,0 +1,25 @@
+---
+title:       Connections
+filter:
+  - erb
+---
+<div class="inner">
+  <h2>Conference Team</h2>
+  <p>Golden Gate Ruby Conference is a production of Golden Gate Ruby Conference, LLC. Your conference organizers are:</p>
+  <ul>
+    <li><%= render :partial => "/people/susser" %></li>
+    <li><%= render :partial => "/people/silber" %></li>
+  </ul>
+
+  <h2>Follow Us</h2>
+  <div class="text">
+    <p>You can keep up with news updates on our Twitter account: <a href="http://twitter.com/gogaruco">twitter.com/gogaruco</a></p>
+    <p>We'll be linking up speakers and code used in presentations on our GitHub account: <a href="http://github.com/gogaruco">github.com/gogaruco</a>.  We'd like to follow you too, so we'll ask you for your GitHub account when you register. Don't have one yet? <a href="http://github.com/plans">Go get one</a> for free!</p>
+  </div>
+
+  <h2>Contact Us</h2>
+  <div class="text">
+    <p>General inquiries: <a href="mailto:conference@gogaruco.com?subject=conference">conference@gogaruco.com</a></p>
+    <p>Sponsorship opportunities: <a href="mailto:sponsors@gogaruco.com?subject=sponsoring">sponsors@gogaruco.com</a></p>
+  </div>
+</div>

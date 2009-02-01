@@ -6,15 +6,15 @@ filter:    erb
 <html>
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Golden Gate Ruby Conference</title>
-  <link href="css/gogaruco.css" media="screen" rel="stylesheet" type="text/css" />
+  <title>Golden Gate Ruby Conference<%= (@page.title || "").empty? ? "" : " - #{@page.title}" %></title>
+  <link href="/css/gogaruco.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <% pages = %w( Registration Speakers Schedule Lodging Sponsors Community) %>
 <body id="index">
   <div id="container">
 
     <div id="header">
-      <a class="home" href="/index.html"><img src="/images/gogaruco_banner.png"></a>
+      <a class="home" href="/"><img src="/images/gogaruco_banner.png"></a>
       <div class="bubble">
         <ul>
           <li class="in0">April 17-18, 2009</li>
@@ -25,8 +25,8 @@ filter:    erb
       <div class="nav">
         <ul>
           <% pages.each_with_index do |page,i| -%>
-            <li><a class="blue<%= i %><%= @page.name == page.downcase ? " current" : "" %>"
-                   href="/<%= page.downcase %>.html"><%= page.upcase %></a></li>
+            <li><a class="blue<%= i %><%= @page.path =~ %r[#{page}]i ? " current" : "" %>"
+                   href="/<%= page.downcase %>/"><%= page.upcase %></a></li>
           <% end -%>
         </ul>
       </div>
@@ -41,13 +41,13 @@ filter:    erb
         <h2>Sponsors</h2>
         <h3>Platinum</h3>
         <ul>
-          <li><a href="http://example.com/"><img src="images/logos/fnord.gif" alt="FNORD"></a></li>
-          <li><a href="http://example.com/"><img src="images/logos/fnord.gif" alt="FNORD"></a></li>
+          <li><a href="http://example.com/"><img src="/images/logos/fnord.gif" alt="FNORD"></a></li>
+          <li><a href="http://example.com/"><img src="/images/logos/fnord.gif" alt="FNORD"></a></li>
         </ul>
         <h3>Gold</h3>
         <ul>
-          <li><a href="http://example.com/"><img src="images/logos/fnord.gif" alt="FNORD"></a></li>
-          <li><a href="http://example.com/"><img src="images/logos/fnord.gif" alt="FNORD"></a></li>
+          <li><a href="http://example.com/"><img src="/images/logos/fnord.gif" alt="FNORD"></a></li>
+          <li><a href="http://example.com/"><img src="/images/logos/fnord.gif" alt="FNORD"></a></li>
         </ul>
       </div>
     </div>
