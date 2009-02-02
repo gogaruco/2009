@@ -64,6 +64,15 @@ body {
   background-color: #D3CFBD;
 }
 
+p {
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+p + p {
+  margin-top: 0.8em;
+}
+
 a {
   text-decoration: none;
 }
@@ -78,6 +87,7 @@ a:hover, a:active {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lucida Grande", "Arial", "Sans-Serif";
+  font-weight: bold;
 }
 
 /**********/
@@ -146,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 50px;
   padding-right: 1em;
   color: white;
-  font-size: 125%;
+  font-size: 1.25em;
   font-weight: bold;
   text-align: right;
 }
@@ -171,13 +181,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #main {
   float: left;
-  width: 62%;
+  width: 76%;
   height: 100%;
-  margin-left: 14%;
 }
 
 #main > .inner {
-  margin: 2em 2em 2em 0;
+  margin: 36px;
 }
 
 #main h2 {
@@ -213,6 +222,10 @@ p.center {
 
 /*--------*/
 
+ul.people li {
+  margin-top: 1em;
+}
+
 .person {
   position: relative;
   overflow: hidden;
@@ -225,52 +238,96 @@ p.center {
 
 .person h4 {
   margin-bottom: 0.5em;
-  color: blue;
-  font-size: 150%;
+  color: black;
+  font-size: 1.6em;
+  font-weight: bold;
 }
 
-.person p {
-  font-size: 120%;
+.person .appearing:before {
+  content: "Session: ";
 }
 
+.person h4, .person p {
+  margin-left: 162px;
+}
+
+/*--------*/
+
+#program table {
+  width: 100%;
+  font-size: 1.4em;
+}
+
+#program th, #program td {
+  width: 45%;
+}
+
+#program th:first-child {
+  width: 10%;
+}
 
 /**********/
 
 #sponsors {
   float: right;
-  width: 228px%;
-  height: 100%;
+  width: 24%;
+  margin-top: 18px;
 }
 
-#sponsors .inner {
+/*#sponsors .inner {
   margin: 18px 18px 18px 0;
   border: 1px solid #dedede;
   width: 208px;
 }
+*/
 
 #sponsors h2 {
-  margin: 1em 0;
   color: #aea78c;
   font-size: 2em;
   text-align: center;
 }
 
 #sponsors h3 {
-  margin: 1em 0;
   padding: 5px 0;
   background-color: #f7f6f3;
   color: #666666;
   font-size: 1.5em;
-  font-weight: bold;
   text-align: center;
 }
 
 #sponsors ul {
   list-style: none;
+  margin-right: 18px;
   padding: 0;
 }
 
-#sponsors li {
+#sponsors > ul > li {
+}
+
+#sponsors > ul > li div {
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  width: 208px;
+}
+
+#sponsors > ul > li:before {
+  display: block;
+  height: 24px;
+  width: 100%;
+  margin-top: 18px;
+  content: "";
+  background: url(/images/sponsors_top.png) top left no-repeat;
+}
+
+#sponsors > ul > li:after {
+  display: block;
+  height: 24px;
+  width: 100%;
+  content: "";
+  background: url(/images/sponsors_bottom.png) top left no-repeat;
+}
+
+#sponsors ul ul li {
   margin: 1em 0 0 0;
   text-align: center;
 }
@@ -314,7 +371,7 @@ div.section span {
   background-color: white;
 }
 
-#footer p {
+#footer div {
   padding-top: 2px;
   padding-right: 19px;
   font-size: 1.2em;
