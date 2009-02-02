@@ -13,18 +13,18 @@
   <div id="container">
 
     <div id="header">
-      <a class="home" href="/"><img src="/images/gogaruco_banner.png"></a>
-      <div class="bubble">
-        <ul>
-          <li class="in0">April 17-18, 2009</li>
-          <li class="in1">San Francisco, California</li>
-          <li class="in2">at the historic <a href="http://www.cafedunord.com/?page=directions">Swedish American Hall</a></li>
-        </ul>
+      <div id="banner_wrapper">
+        <img src="/images/gogaruco_banner.png">
+        <div class="bubble">
+          <div class="dates">April 17-18, 2009</div>
+          <div class="city">San Francisco, California</div>
+          <div class="venue">at the historic <a href="http://www.cafedunord.com/?page=directions">Swedish American Hall</a></div>
+        </div>
       </div>
       <div class="nav">
         <ul>
                       <li><a class="blue0"
-                   href="/registration/">REGISTRATION</a></li>
+                   href="/register/">REGISTER</a></li>
                       <li><a class="blue1"
                    href="/speakers/">SPEAKERS</a></li>
                       <li><a class="blue2"
@@ -41,8 +41,19 @@
 
     <div id="main">
       <div class="inner">
-        <h2>Sponsors and Advertisers</h2>
+        <h2>Sponsors</h2>
 <ul class="sponsors">
+  <li><div class="sponsor">
+  <h3>AT&amp;T Interactive</h3>
+  <div class="logo"><a href="http://betalabs.yellowpages.com/"><img src="/images/logos/att.gif"></a></div>
+  <p>AT&amp;T Interactive is devoted to creating compelling experiences that connect people, businesses and places so everyone can more easily engage with their world, wherever they work, live or play.
+  </p>
+  <p>We have a passion for the Internet, mobile applications and emerging media platforms, and are proud to nourish a collaborative, tech-driven culture that promotes innovation, the entrepreneurial spirit and a desire to enhance everyone's daily lives.
+  </p>
+  <p>As a tech-driven company, AT&T Interactive is always looking for passionate talented individuals who can solve difficult problems and develop new and existing products to exceed consumer expectations and drive value for our advertisers - whether it's online, mobile, interactive TV, video or other media platforms.
+  </p>
+</div>
+</li>
   <li><div class="sponsor">
   <h3>Engine Yard</h3>
   <div class="logo"><a href="http://engineyard.com/"><img src="/images/logos/engine_yard.png"></a></div>
@@ -58,19 +69,37 @@
   </p>
 </div></li>
   <li><div class="sponsor">
+  <h3>Integrum</h3>
+  <div class="logo"><a href="http://integrumtech.com/"><img src="/images/logos/integrum.jpg"></a></div>
+  <p>Integrum emphasizes business value, speed to market and open communication to build remarkable Ruby on Rails web applications.</p>
+</div>
+</li>
+  <li><div class="sponsor">
+  <h3>JSConf 2009</h3>
+  <div class="logo"><a href="http://www.jsconf2009.com/"><img src="/images/logos/jsconf.jpg" alt="JSConf 2009"></a></div>
+  <p>JSConf 2009 is a conference devoted to the programming language we all love to hate and hate to love, JavaScript. This is conference will be thoughtful, content driven, and exemplify the very nature of JavaScript. The core focus of this conference is to expose some of the details about JavaScript that are often overlooked and present them more as a discussion with the audience. The content of the conference should cater to all types of JavaScript users from client interfaces to server development to testing. No matter which programming language you love, you know of the pleasure and pain of JavaScript programming.</p>
+</div>
+</li>
+  <li><div class="sponsor">
   <h3>Pivotal Labs</h3>
   <div class="logo"><a href="http://pivotallabs.com/"><img src="/images/logos/pivotal.png"></a></div>
-  <p>Pivotal Labs: Nobody knows agile like we do.</p>
+  <p>Pivotal Labs: Discipline, collaboration, results.</p>
   <p>
-    Pivotal Labs: Nobody knows agile like we do. Pivotal Labs: Nobody knows agile like we do. Pivotal Labs: Nobody knows agile like we do. Pivotal Labs: Nobody knows agile like we do. 
+    At Pivotal Labs, we believe software development should enable your innovative vision, not constrain it. Our sustainable development practice combines our diverse and brilliant team of Pivots with the very best in agile software management techniques. Pivotal Labs partners with you in a collaborative and iterative process that not only produces the highest quality software, it also spreads our wealth of experience to your development team. Let our focus, expertise, and perspective inform and improve your development process throughout and beyond our partnership. Pivotal Labs: come for the best software, leave with the best practices.     
   </p>
-  <p>
-    We handle deployment and maintenance, so you can focus on building your application and running your business. Our deep roots in the Ruby and Rails communities, combined with our commitment to driving the next generation of Ruby technologies, offer our customers the peace of mind of knowing their applications are managed by a team of true technical experts.
-  </p>
-  <p>
-    Engine Yard is invested in the future of the Ruby and Rails communities, and is helping foster and lead development by supporting open source projects like Rails, Merb and Rubinius.
-  </p>
-</div></li>
+</div>
+
+</li>
+  <li><div class="sponsor">
+  <h3>RailsKits</h3>
+  <div class="logo"><a href="http://railskits.com/"><img src="/images/logos/railskits.png" alt="RailsKits"></a></div>
+  <p>Rails Kits provides developers with ready-made and well-tested code for getting projects off to a quick start.  Developers can save time, skipping the boring stuff and diving straight in to the fun stuff.  Get your project done in less time with less work.</p>
+</div>
+</li>
+</ul>
+
+<h2>Advertisers</h2>
+<ul class="sponsors">
 </ul>
 
       </div>
@@ -83,9 +112,9 @@
           <div>
             <h3>Platinum</h3>
             <ul>
-              <li><a href="http://betalabs.yellowpages.com/"><img src="/images/logos/att.gif" alt="AT&amp;T"></a></li>
               <li><a href="http://engineyard.com/"><img src="/images/logos/engine_yard.png" alt="Engine Yard"></a></li>
               <li><a href="http://pivotallabs.com/"><img src="/images/logos/pivotal.png" alt="Pivotal Labs"></a></li>
+              <li><a href="http://betalabs.yellowpages.com/"><img src="/images/logos/att.gif" alt="AT&amp;T"></a></li>
             </ul>
           </div>
         </li>
@@ -102,8 +131,7 @@
           <div>
             <h3>Bronze</h3>
             <ul>
-              <li><a href="http://integrumtech.com/"><img src="/images/logos/integrum.jpg" alt="Integrum"></a></li>
-              <li><a href="http://www.jsconf2009.com/"><img src="/images/logos/jsconf.jpg" alt="JSConf 2009"></a></li>
+              <li><a href="http://railskits.com/"><img src="/images/logos/railskits.png" alt="RailsKits"></a></li>
             </ul>
           </div>
         </li>

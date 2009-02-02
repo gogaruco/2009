@@ -13,18 +13,18 @@
   <div id="container">
 
     <div id="header">
-      <a class="home" href="/"><img src="/images/gogaruco_banner.png"></a>
-      <div class="bubble">
-        <ul>
-          <li class="in0">April 17-18, 2009</li>
-          <li class="in1">San Francisco, California</li>
-          <li class="in2">at the historic <a href="http://www.cafedunord.com/?page=directions">Swedish American Hall</a></li>
-        </ul>
+      <div id="banner_wrapper">
+        <img src="/images/gogaruco_banner.png">
+        <div class="bubble">
+          <div class="dates">April 17-18, 2009</div>
+          <div class="city">San Francisco, California</div>
+          <div class="venue">at the historic <a href="http://www.cafedunord.com/?page=directions">Swedish American Hall</a></div>
+        </div>
       </div>
       <div class="nav">
         <ul>
                       <li><a class="blue0"
-                   href="/registration/">REGISTRATION</a></li>
+                   href="/register/">REGISTER</a></li>
                       <li><a class="blue1"
                    href="/speakers/">SPEAKERS</a></li>
                       <li><a class="blue2"
@@ -44,15 +44,18 @@
         <h2>Conference Team</h2>
 <p>Golden Gate Ruby Conference is a production of Golden Gate Ruby Conference, LLC. Your conference organizers are:</p>
 <ul class="people">
-  <li><div class="person">
+  <li>--
+filter: erb
+--
+<div class="person">
   <div class="mug"><img src="/images/people/susser.png"></div>
-  <h4>Josh Susser</h4>
+  <h4><a name="susser">Josh Susser</a></h4>
   <p>Josh likes to say that Ruby is the love child of Lisp and Smalltalk, raised by Perl the eccentric nanny. At Pivotal Labs he spends most of his time developing Rails web applications for clients, and he is a frequent contributor to the Rails open source project. He has spoken at <a href="http://railsconf.org/">RailsConf</a>, regional conferences and meetups. You can find his blog at <a href="http://blog.hasmanythrough.com/">blog.hasmanythrough.com</a>.</p>
 </div>
 </li>
   <li><div class="person">
   <div class="mug"><img src="/images/people/silber.png"></div>
-  <h4>Leah Silber</h4>
+  <h4><a name="silber">Leah Silber</a></h4>
   <p>If you've been to a Ruby conference in the last year or two, you've likely seen Leah there.  When she's not traveling the world seeking out the perfect conference, she's here in San Francisco running Marketing and Community Relations at Engine Yard.</p>
 </div>
 </li>
@@ -80,9 +83,9 @@
           <div>
             <h3>Platinum</h3>
             <ul>
-              <li><a href="http://betalabs.yellowpages.com/"><img src="/images/logos/att.gif" alt="AT&amp;T"></a></li>
               <li><a href="http://engineyard.com/"><img src="/images/logos/engine_yard.png" alt="Engine Yard"></a></li>
               <li><a href="http://pivotallabs.com/"><img src="/images/logos/pivotal.png" alt="Pivotal Labs"></a></li>
+              <li><a href="http://betalabs.yellowpages.com/"><img src="/images/logos/att.gif" alt="AT&amp;T"></a></li>
             </ul>
           </div>
         </li>
@@ -99,8 +102,7 @@
           <div>
             <h3>Bronze</h3>
             <ul>
-              <li><a href="http://integrumtech.com/"><img src="/images/logos/integrum.jpg" alt="Integrum"></a></li>
-              <li><a href="http://www.jsconf2009.com/"><img src="/images/logos/jsconf.jpg" alt="JSConf 2009"></a></li>
+              <li><a href="http://railskits.com/"><img src="/images/logos/railskits.png" alt="RailsKits"></a></li>
             </ul>
           </div>
         </li>

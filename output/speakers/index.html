@@ -13,18 +13,18 @@
   <div id="container">
 
     <div id="header">
-      <a class="home" href="/"><img src="/images/gogaruco_banner.png"></a>
-      <div class="bubble">
-        <ul>
-          <li class="in0">April 17-18, 2009</li>
-          <li class="in1">San Francisco, California</li>
-          <li class="in2">at the historic <a href="http://www.cafedunord.com/?page=directions">Swedish American Hall</a></li>
-        </ul>
+      <div id="banner_wrapper">
+        <img src="/images/gogaruco_banner.png">
+        <div class="bubble">
+          <div class="dates">April 17-18, 2009</div>
+          <div class="city">San Francisco, California</div>
+          <div class="venue">at the historic <a href="http://www.cafedunord.com/?page=directions">Swedish American Hall</a></div>
+        </div>
       </div>
       <div class="nav">
         <ul>
                       <li><a class="blue0"
-                   href="/registration/">REGISTRATION</a></li>
+                   href="/register/">REGISTER</a></li>
                       <li><a class="blue1 current"
                    href="/speakers/">SPEAKERS</a></li>
                       <li><a class="blue2"
@@ -43,72 +43,73 @@
       <div class="inner">
         <h2>Speakers and Panelists</h2>
 <ul class="people">
-  <li>--
-filter: erb
---
-<div class="person">
+  <li><div class="person">
   <div class="mug"><img src="/images/people/borenstein.png"></div>
-  <h4>Greg Borenstein</h4>
+  <h4><a name="borenstein">Greg Borenstein</a></h4>
   <p>Greg Borenstein is a programmer and musician in Portland, Oregon. He is the author of a number of open source projects including <a href="http://rad.rubyforge.org">RAD</a>, a library for programming the Arduino open source hardware platform in Ruby. In his spare time, Greg organizes PDX Pop Now!, a free all-ages local music festival and non-profit organization, and blogs about Ruby, art, and hardware hacking on <a href="http://urbanhonking.com/ideasfordozens">Urban Honking</a>. Ruby was the first programming language he ever learned.</p>
-  <p class="appearing"><%= session_link("borenstein", "Arduino is Rails for hardware hacking") %></p>
-  <p class="appearing"><%= session_link("panel", "Ruby Application Frameworks discussion panel") %></p>
+  <p class="appearing"><a href="/schedule/index.html#borenstein">Arduino is Rails for hardware hacking</a></p>
+  <p class="appearing"><a href="/schedule/index.html#panel">Ruby Application Frameworks discussion panel</a></p>
 </div>
 </li>
   <li><div class="person">
   <div class="mug"><img src="/images/people/elliott.png"></div>
-  <h4>Tim Elliott</h4>
+  <h4><a name="elliott">Tim Elliott</a></h4>
   <p>Tim immediately became enamored with Hackety Hack and its cousin Shoes
 when they were released, and he started contributing to Shoes in late
 2008. He has been a programmer for <a href="http://www.travidia.com/">Travidia Inc.</a> since 2005, and
 shares a 40-acre farm with 10 roommates, 80 chickens, and 2 sheep in
 Chico, California.</p>
-  <p class="appearing"><a href="/sessions/elliott-shoes.html">Using Shoes to create better iPhone apps</a></p>
-  <p class="appearing"><a href="/sessions/panel-frameworks.html">Ruby Application Frameworks discussion panel</a></p>
+  <p class="appearing"><a href="/schedule/index.html#elliott">Using Shoes to create better iPhone apps</a></p>
+  <p class="appearing"><a href="/schedule/index.html#panel">Ruby Application Frameworks discussion panel</a></p>
 </div>
 </li>
   <li><div class="person">
   <div class="mug"><img src="/images/people/grigorik.png"></div>
-  <h4>Ilya Grigorik</h4>
+  <h4><a name="grigorik">Ilya Grigorik</a></h4>
   <p>Ilya Grigorik is the founder and CTO of <a href="http://www.postrank.com/">AideRSS</a>, a social engagement monitoring and analytics platform.  He has been active in the Ruby and cloud computing community for the last three years, documenting and sharing hands on knowledge and experience with the latest architecture, design patterns, and open-source projects (blog: <a href="www.igvita.com">www.igvita.com</a>, twitter: <a href="http://twitter.com/igrigorik">@igrigorik</a>). He is an active speaker at many Ruby and Cloud Computing events.</p>
-  <p class="appearing"><a href="/sessions/grigorik-proxies.html">Ruby Proxies for Scale, Performance, and Monitoring</a></p>
-  <p class="appearing"><a href="/sessions/panel-frameworks.html">Ruby Application Frameworks discussion panel</a></p>
+  <p class="appearing"><a href="/schedule/index.html#grigorik">Ruby Proxies for Scale, Performance, and Monitoring</a></p>
 </div>
 </li>
   <li><div class="person">
   <div class="mug"><img src="/images/people/kallen.png"></div>
-  <h4>Nick Kallen</h4>
+  <h4><a name="kallen">Nick Kallen</a></h4>
   <p>Nick is a metaphor in a world of similies.</p>
 </div>
 </li>
   <li><div class="person">
   <div class="mug"><img src="/images/people/katz.png"></div>
-  <h4>Yehuda Katz</h4>
+  <h4><a name="katz">Yehuda Katz</a></h4>
   <p>Yehuda is currently employed by Engine Yard, and works full time as a Core Team Member on the Rails and Merb projects. He is the co-author of <em>jQuery in Action</em> and the upcoming <em>Merb/Rails 3 in Action</em>, and is a contributor to <em>Ruby in Practice</em>. He spends most of his time hacking on Rails and Merb, but is also active on other Ruby community projects like Rubinius and DataMapper. And when the solution doesn't yet exist, he'll try his hand at creating one &emdash; as such, he's also created projects like Thor and DO.rb.</p>
-  <p class="appearing"><a href="/sessions/panel-frameworks.html">Ruby Application Frameworks discussion panel</a></p>
+  <p class="appearing"><a href="/schedule/index.html#panel">Ruby Application Frameworks discussion panel</a></p>
 </div>
 </li>
   <li><div class="person">
   <div class="mug"><img src="/images/people/mizerany.png"></div>
-  <h4>Blake Mizerany</h4>
+  <h4><a name="katz">Blake Mizerany</a></h4>
   <p>Blake probably drinks too much for his own good.</p>
-  <p class="appearing"><a href="/sessions/panel-frameworks.html">Ruby Application Frameworks discussion panel</a></p>
+  <p class="appearing"><a href="/schedule/index.html#panel">Ruby Application Frameworks discussion panel</a></p>
 </div>
 </li>
   <li><div class="person">
   <div class="mug"><img src="/images/people/peek.png"></div>
-  <h4>Josh Peek</h4>
+  <h4><a name="peek">Josh Peek</a></h4>
   <p>Josh Peek is a 20 year old Rubyist from Chicago, IL. Currently attending college at DePaul University, he codes part time at <a href ="http://www.37signals.com/">37signals</a> and still makes time to hack on other <a href="http://github.com/josh">side projects</a>. Josh joined the Rails core after his work on Rails thread-safety and is now working on full Rack support for Rails.</p>
-  <p class="appearing"><a href="/sessions/panel-frameworks.html">Ruby Application Frameworks discussion panel</a></p>
+  <p class="appearing"><a href="/schedule/index.html#panel">Ruby Application Frameworks discussion panel</a></p>
 </div>
 </li>
   <li><div class="person">
   <div class="mug"><img src="/images/people/phillips.png"></div>
-  <h4>Jay Phillips</h4>
+  <h4><a name="phillips">Jay Phillips</a></h4>
   <p>Jay Phillips is an innovator in the spaces where sophisticated VoIP development falls apart and where Ruby rocks. As the creator of Adhearsion and its parent consulting company, Jay brings new possibilities to these two technologies through his work on the open-source Adhearsion framework.</p>
-  <p class="appearing"><a href="/sessions/panel-frameworks.html">Ruby Application Frameworks discussion panel</a></p>
+  <p class="appearing"><a href="/schedule/index.html#panel">Ruby Application Frameworks discussion panel</a></p>
 </div>
 </li>
-  <li></li>
+  <li><div class="person">
+  <div class="mug"><img src="/images/people/sobo.png"></div>
+  <h4><a name="sobo">Nathan Sobo</a></h4>
+  <p>Nathan is very enthusiastic.</p>
+</div>
+</li>
 </ul>
 
       </div>
@@ -121,9 +122,9 @@ Chico, California.</p>
           <div>
             <h3>Platinum</h3>
             <ul>
-              <li><a href="http://betalabs.yellowpages.com/"><img src="/images/logos/att.gif" alt="AT&amp;T"></a></li>
               <li><a href="http://engineyard.com/"><img src="/images/logos/engine_yard.png" alt="Engine Yard"></a></li>
               <li><a href="http://pivotallabs.com/"><img src="/images/logos/pivotal.png" alt="Pivotal Labs"></a></li>
+              <li><a href="http://betalabs.yellowpages.com/"><img src="/images/logos/att.gif" alt="AT&amp;T"></a></li>
             </ul>
           </div>
         </li>
@@ -140,8 +141,7 @@ Chico, California.</p>
           <div>
             <h3>Bronze</h3>
             <ul>
-              <li><a href="http://integrumtech.com/"><img src="/images/logos/integrum.jpg" alt="Integrum"></a></li>
-              <li><a href="http://www.jsconf2009.com/"><img src="/images/logos/jsconf.jpg" alt="JSConf 2009"></a></li>
+              <li><a href="http://railskits.com/"><img src="/images/logos/railskits.png" alt="RailsKits"></a></li>
             </ul>
           </div>
         </li>

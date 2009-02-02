@@ -13,18 +13,18 @@
   <div id="container">
 
     <div id="header">
-      <a class="home" href="/"><img src="/images/gogaruco_banner.png"></a>
-      <div class="bubble">
-        <ul>
-          <li class="in0">April 17-18, 2009</li>
-          <li class="in1">San Francisco, California</li>
-          <li class="in2">at the historic <a href="http://www.cafedunord.com/?page=directions">Swedish American Hall</a></li>
-        </ul>
+      <div id="banner_wrapper">
+        <img src="/images/gogaruco_banner.png">
+        <div class="bubble">
+          <div class="dates">April 17-18, 2009</div>
+          <div class="city">San Francisco, California</div>
+          <div class="venue">at the historic <a href="http://www.cafedunord.com/?page=directions">Swedish American Hall</a></div>
+        </div>
       </div>
       <div class="nav">
         <ul>
                       <li><a class="blue0"
-                   href="/registration/">REGISTRATION</a></li>
+                   href="/register/">REGISTER</a></li>
                       <li><a class="blue1"
                    href="/speakers/">SPEAKERS</a></li>
                       <li><a class="blue2 current"
@@ -42,13 +42,17 @@
     <div id="main">
       <div class="inner">
         <h2>Sessions</h2>
-<ul class="people">
-  <li>--
-filter: erb
---
-<div class="session">
-  <h3><a name="rad">Arduino is Rails for hardware hacking</a></h3>
-  <p class="speaker"><%= speaker_link("Greg Borenstein") %></p>
+<ul class="sessions">
+  <li><div class="session">
+  <h3><a name="panel">Discussion Panel: Ruby Application Frameworks</a></h3>
+  <p class="speaker">
+    <a href="/speakers/index.html#borenstein">Greg Borenstein</a>,
+    <a href="/speakers/index.html#elliott">Tim Elliott</a>,
+    <a href="/speakers/index.html#katz">Yehuda Katz</a>,
+    <a href="/speakers/index.html#mizerany">Blake Mizerany</a>,
+    <a href="/speakers/index.html#peek">Josh Peek</a>,
+    <a href="/speakers/index.html#phillips">Jay Phillips</a>
+  </p>
   <p>
     Just as Rails did for web development, the Arduino project combines powerful layers of abstraction with sensible defaults, making it easy to build hardware devices that sense and manipulate the physical world. So easy that artists, social workers, scientists, and even simple web programmers who lack electrical engineering degrees can do it.
   </p>
@@ -60,12 +64,9 @@ filter: erb
   </p>
 </div>
 </li>
-  <li>--
-filter: erb
---
-<div class="session">
-  <h3><a name="panel">Discussion Panel: Ruby Application Frameworks</a></h3>
-  <p class="speaker"><%= panelists.collect {|s| speaker_link(name)}.join(', ') %>,</p>
+  <li><div class="session">
+  <h3><a name="borenstein">Arduino is Rails for hardware hacking</a></h3>
+  <p class="speaker"><a href="/speakers/index.html#borenstein">Greg Borenstein</a></p>
   <p>
     Just as Rails did for web development, the Arduino project combines powerful layers of abstraction with sensible defaults, making it easy to build hardware devices that sense and manipulate the physical world. So easy that artists, social workers, scientists, and even simple web programmers who lack electrical engineering degrees can do it.
   </p>
@@ -75,6 +76,46 @@ filter: erb
   <p>
     In this talk, I'll provide a whirlwind introduction to the world of hardware hacking and demonstrate a number of projects that use RAD to integrate hardware with other well-known Ruby projects including Sinatra, Shoes, and Archaeopteryx. Ever wanted a bell to ring when you push code to GitHub? Ever wanted your artificially intelligent DJ to be able to play real drums? If so, this is the talk for you.
   </p>
+</div>
+</li>
+  <li><div class="session">
+  <h3><a name="elliott">Using Shoes to create better iPhone apps</a></h3>
+  <p class="speaker"><a href="/speakers/index.html#elliott">Tim Elliott</a></p>
+
+  <p>
+    Shoes is a tiny graphics toolkit that embeds ruby. It allows you to do
+    anything. You can draw squares and circles and they can move about and
+    say "Good Morning" when they chance upon each other. Shoes lets you
+    add layouts to your applications with ease. It borrows ideas from
+    Processing, Lua, and HTML to make an intuitive language to convert
+    your ideas into programs that you can share with your friends.
+  </p>
+  <p>
+    This talk begins with a Shoes introduction for Ruby programmers. It
+    won't take much to get up and running and we can move straight into a
+    practical application of Shoes: prototyping iPhone apps. It turns out
+    Shoes is excellent for quickly implementing ideas, testing workflow,
+    and fleshing out the code structure. It's nice to do this stuff in
+    Ruby first before porting it to Objective-C.
+  </p>
+  <p>
+    We will also cover how to debug shoes applications and a look into the
+    Shoes source code.
+  </p>
+</div>
+</li>
+  <li><div class="session">
+  <h3><a name="grigorik">Ruby Proxies for Scale, Performance, and Monitoring</a></h3>
+  <p class="speaker"><a href="/speakers/index.html#grigorik">Ilya Grigorik</a></p>
+
+  <p>A high-performance proxy server is less than a hundred lines of Ruby code and it is an indispensable tool for anyone who knows how to use it. In this session we will first walk through the basics of event-driven architectures and high-performance network programming in Ruby using the <a href="http://rubyeventmachine.com/">EventMachine</a> framework. Then we will dissect two real-world examples of Ruby proxies and their applications:</p>
+  <ul class="dots">
+    <li>Performance A/B Testing: duplicating live traffic against multiple servers to
+      compare speed, reliability and format of the response.</li>
+    <li>Extending protocols: intercept packets and inject your own functionality into
+      applications such as Memcache, Beanstalkd, and others.</li>
+  </ul>
+  <p>No prior knowledge of EventMachine will be assumed. Rudimentary knowledge of network programming will be helpful.</p>
 </div>
 </li>
 </ul>
@@ -89,9 +130,9 @@ filter: erb
           <div>
             <h3>Platinum</h3>
             <ul>
-              <li><a href="http://betalabs.yellowpages.com/"><img src="/images/logos/att.gif" alt="AT&amp;T"></a></li>
               <li><a href="http://engineyard.com/"><img src="/images/logos/engine_yard.png" alt="Engine Yard"></a></li>
               <li><a href="http://pivotallabs.com/"><img src="/images/logos/pivotal.png" alt="Pivotal Labs"></a></li>
+              <li><a href="http://betalabs.yellowpages.com/"><img src="/images/logos/att.gif" alt="AT&amp;T"></a></li>
             </ul>
           </div>
         </li>
@@ -108,8 +149,7 @@ filter: erb
           <div>
             <h3>Bronze</h3>
             <ul>
-              <li><a href="http://integrumtech.com/"><img src="/images/logos/integrum.jpg" alt="Integrum"></a></li>
-              <li><a href="http://www.jsconf2009.com/"><img src="/images/logos/jsconf.jpg" alt="JSConf 2009"></a></li>
+              <li><a href="http://railskits.com/"><img src="/images/logos/railskits.png" alt="RailsKits"></a></li>
             </ul>
           </div>
         </li>
