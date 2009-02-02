@@ -29,7 +29,7 @@ filter:    erb
         <ul>
           <% pages.each_with_index do |page,i| -%>
             <li><a class="blue<%= i %><%= @page.path =~ %r[#{page}]i ? " current" : "" %>"
-                   href="/<%= page.downcase %>/"><%= page.upcase %></a></li>
+                   href="/<%= page.downcase %>/"><%= page %></a></li>
           <% end -%>
         </ul>
       </div>
@@ -81,13 +81,6 @@ filter:    erb
     <div class="copy">
       &copy; 2009 golden gate ruby conference, llc &bull;
       logo design by <a href="http://codefluency.com/">bruce williams</a>
-    </div>
-    <div class="nav">
-      <ul>
-        <% pages.each_with_index do |page,i| -%>
-          <li class="blue<%= i %>">&nbsp;</li>
-        <% end -%>
-      </ul>
     </div>
   </div>
 <script type="text/javascript">
