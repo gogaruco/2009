@@ -195,15 +195,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2em;
 }
 
-.bubble, .text, .body-text {
-  font-size: 1.5em;
-  line-height: 1.75em;
-}
-
-.body-text p {
-  margin-bottom: 1em;
-}
-
 p.center {
   text-align: center;
 }
@@ -233,7 +224,13 @@ ul.people li {
 
 .person .mug {
   float: left;
+  width: 144px;
+  height: 144px;
   margin: 0 18px 18px 0;
+}
+
+.person .mug img {
+  margin: 0 auto;
 }
 
 .person h4 {
@@ -245,6 +242,7 @@ ul.people li {
 
 .person .appearing:before {
   content: "Session: ";
+  font-weight: bold;
 }
 
 .person h4, .person p {

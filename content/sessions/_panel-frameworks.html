@@ -1,0 +1,16 @@
+--
+filter: erb
+--
+<div class="session">
+  <h3><a name="panel">Discussion Panel: Ruby Application Frameworks</a></h3>
+  <p class="speaker"><%= panelists.collect {|s| speaker_link(name)}.join(', ') %>,</p>
+  <p>
+    Just as Rails did for web development, the Arduino project combines powerful layers of abstraction with sensible defaults, making it easy to build hardware devices that sense and manipulate the physical world. So easy that artists, social workers, scientists, and even simple web programmers who lack electrical engineering degrees can do it.
+  </p>
+  <p>
+    The Ruby Arduino Development project attempts to extend these virtues by bringing the beauty and power of Ruby to the Arduino platform. RAD compiles Ruby scripts for execution on the Arduino microcontroller development board. In addition to the syntactic elegance and simplicity gained by getting to program in Ruby instead of C++, RAD provides a set of declarative Rails-like conventions and helpers that reduce boilerplate and simplify often-byzantine hardware APIs.
+  </p>
+  <p>
+    In this talk, I'll provide a whirlwind introduction to the world of hardware hacking and demonstrate a number of projects that use RAD to integrate hardware with other well-known Ruby projects including Sinatra, Shoes, and Archaeopteryx. Ever wanted a bell to ring when you push code to GitHub? Ever wanted your artificially intelligent DJ to be able to play real drums? If so, this is the talk for you.
+  </p>
+</div>

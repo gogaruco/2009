@@ -25,13 +25,15 @@
         <ul>
                       <li><a class="blue0"
                    href="/registration/">REGISTRATION</a></li>
-                      <li><a class="blue1"
-                   href="/program/">PROGRAM</a></li>
+                      <li><a class="blue1 current"
+                   href="/speakers/">SPEAKERS</a></li>
                       <li><a class="blue2"
-                   href="/lodging/">LODGING</a></li>
+                   href="/schedule/">SCHEDULE</a></li>
                       <li><a class="blue3"
-                   href="/sponsors/">SPONSORS</a></li>
+                   href="/lodging/">LODGING</a></li>
                       <li><a class="blue4"
+                   href="/sponsors/">SPONSORS</a></li>
+                      <li><a class="blue5"
                    href="/community/">COMMUNITY</a></li>
                   </ul>
       </div>
@@ -41,12 +43,13 @@
       <div class="inner">
         <div class="inner">
   <h2>Speakers and Panelists</h2>
-  <ul>
+  <ul class="people">
     <li><div class="person">
   <div class="mug"><img src="/images/people/borenstein.png"></div>
   <h4>Greg Borenstein</h4>
-  <p>Greg Borenstein bears an uncanny resemblance to Orlando Bloom.</p>
-  <p class="appearing"><a href="/sessions/panel-frameworks.html">Ruby Application Frameworks discussion panel</a></p>
+  <p>Greg Borenstein is a programmer and musician in Portland, Oregon. He is the author of a number of open source projects including <a href="http://rad.rubyforge.org">RAD</a>, a library for programming the Arduino open source hardware platform in Ruby. In his spare time, Greg organizes PDX Pop Now!, a free all-ages local music festival and non-profit organization, and blogs about Ruby, art, and hardware hacking on <a href="http://urbanhonking.com/ideasfordozens">Urban Honking</a>. Ruby was the first programming language he ever learned.</p>
+  <p class="appearing"><%= session_link("borenstein", "Arduino is Rails for hardware hacking") %></p>
+  <p class="appearing"><%= session_link("panel", "Ruby Application Frameworks discussion panel") %></p>
 </div>
 </li>
     <li><div class="person">
@@ -149,6 +152,7 @@ Chico, California.</p>
                   <li class="blue2">&nbsp;</li>
                   <li class="blue3">&nbsp;</li>
                   <li class="blue4">&nbsp;</li>
+                  <li class="blue5">&nbsp;</li>
               </ul>
     </div>
   </div>
