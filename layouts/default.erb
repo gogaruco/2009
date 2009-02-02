@@ -1,14 +1,18 @@
+---
+extension: html
+filter:    erb
+---
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Golden Gate Ruby Conference - Golden Gate Ruby Conference</title>
+  <title>Golden Gate Ruby Conference<%= (@page.title || "").empty? ? "" : " - #{@page.title}" %></title>
   <link href="/css/gogaruco.css" media="screen" rel="stylesheet" type="text/css" />
   <!--[if lt IE 8]>
   <script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script>
   <![endif]-->
 </head>
-
+<% pages = %w( Registration Speakers Schedule Lodging Sponsors Community) %>
 <body id="index">
   <div id="container">
 
@@ -23,55 +27,17 @@
       </div>
       <div class="nav">
         <ul>
-                      <li><a class="blue0 current"
-                   href="/registration/">REGISTRATION</a></li>
-                      <li><a class="blue1"
-                   href="/speakers/">SPEAKERS</a></li>
-                      <li><a class="blue2"
-                   href="/schedule/">SCHEDULE</a></li>
-                      <li><a class="blue3"
-                   href="/lodging/">LODGING</a></li>
-                      <li><a class="blue4"
-                   href="/sponsors/">SPONSORS</a></li>
-                      <li><a class="blue5"
-                   href="/community/">COMMUNITY</a></li>
-                  </ul>
+          <% pages.each_with_index do |page,i| -%>
+            <li><a class="blue<%= i %><%= @page.path =~ %r[#{page}]i ? " current" : "" %>"
+                   href="/<%= page.downcase %>/"><%= page.upcase %></a></li>
+          <% end -%>
+        </ul>
       </div>
     </div>
 
     <div id="main">
       <div class="inner">
-        <div class="inner">
-  <div class="text">
-  </div>
-  <h2>Finally!</h2>
-  <div class="body-text">
-    <p>
-      San Francisco is the birthplace of the web revolution. Ruby powers many new technologies, from web
-      sites to telephony and desktop applications.  Now, at long last, San Francisco is host to the Bay Area's
-      own Ruby Conference.
-    </p>
-    <p>
-      Join us for two days of in-depth technical explorations of the most interesting parts of the Ruby
-      landscape, presented by some of the top talents in the Ruby development community.
-    </p>
-  </div>
-  <h2>Follow Us</h2>
-  <div class="text">
-    <p>On Twitter: <a href="http://twitter.com/gogaruco">twitter.com/gogaruco</a></p>
-    <p>On GitHub: <a href="http://github.com/gogaruco">github.com/gogaruco</a></p>
-  </div>
-  <h2>Contact Us</h2>
-  <div class="text">
-    <p>General inquiries: <a href="mailto:conference@gogaruco.com?subject=conference">conference@gogaruco.com</a></p>
-    <p>Sponsorship opportunities: <a href="mailto:sponsors@gogaruco.com?subject=sponsoring">sponsors@gogaruco.com</a></p>
-  </div>
-  <h2>Stay Tuned&hellip;</h2>
-  <div class="text">
-    <p>We'll be updating this site with more information within the week.</p>
-  </div>
-</div>
-
+        <%= @content %>
       </div>
     </div>
 
@@ -119,13 +85,10 @@
     </div>
     <div class="nav">
       <ul>
-                  <li class="blue0">&nbsp;</li>
-                  <li class="blue1">&nbsp;</li>
-                  <li class="blue2">&nbsp;</li>
-                  <li class="blue3">&nbsp;</li>
-                  <li class="blue4">&nbsp;</li>
-                  <li class="blue5">&nbsp;</li>
-              </ul>
+        <% pages.each_with_index do |page,i| -%>
+          <li class="blue<%= i %>">&nbsp;</li>
+        <% end -%>
+      </ul>
     </div>
   </div>
 <script type="text/javascript">

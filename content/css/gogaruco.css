@@ -249,6 +249,30 @@ ul.people li {
   margin-left: 162px;
 }
 
+.sponsors h3 {
+  color: white;
+  background-color: #666;
+  font-size: 2em;
+  margin: 1em 0 0.5em 0;
+  padding: 4px 8px;
+}
+
+.sponsor {
+  overflow: hidden;
+}
+
+.sponsor .logo {
+  float: left;
+  margin: 1em 2em 1.5em 0;
+}
+
+/*.sponsor .logo a {
+  display: block;
+}*/
+
+.sponsor .logo img {
+}
+
 /*--------*/
 
 #program table {
@@ -293,7 +317,7 @@ ul.people li {
   text-align: center;
 }
 
-#sponsors ul {
+#sponsors > ul {
   list-style: none;
   margin-right: 18px;
   padding: 0;
@@ -326,12 +350,12 @@ ul.people li {
 }
 
 #sponsors ul ul li {
-  margin: 1em 0 0 0;
+  margin-top: 1em;
   text-align: center;
 }
 
 #sponsors img {
-  
+  margin: 0 auto;
 }
 
 div.section {
