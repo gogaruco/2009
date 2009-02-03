@@ -250,7 +250,7 @@ ul.people > li, ul.sessions > li {
   margin: 0 auto;
 }
 
-.person h4, .session h3 {
+.person h3, .session h3 {
   margin-bottom: 0.5em;
   color: black;
   font-size: 1.6em;
@@ -266,7 +266,7 @@ ul.people > li, ul.sessions > li {
   font-weight: bold;
 }
 
-.person h4, .person p {
+.person h3, .person p {
   margin-left: 162px;
 }
 
@@ -276,12 +276,17 @@ ul.people > li, ul.sessions > li {
 }
 
 
+.sponsors h2 {
+  border: 1px solid #543;
+  padding: 12px 10px;
+}
+
 .sponsors h3 {
   color: white;
-  background-color: #666;
+  background-color: #543;
   font-size: 2em;
   margin: 1em 0 0.5em 0;
-  padding: 4px 8px;
+  padding: 5px 10px;
 }
 
 .sponsor {
