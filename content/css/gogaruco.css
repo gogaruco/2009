@@ -234,6 +234,12 @@ ul.people > li, ul.sessions > li {
   padding-top: 2em;
 }
 
+ul.people, ul.sessions {
+  margin-bottom: 3em;
+  border-bottom: 2px solid #aaa;
+  padding-bottom: 2em;
+}
+
 .person {
   position: relative;
   overflow: hidden;
