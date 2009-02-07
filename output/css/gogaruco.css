@@ -228,17 +228,21 @@ p.center {
 
 /*--------*/
 
-ul.people > li, ul.sessions > li {
-  margin-top: 3em;
+ul.slots > li {
   border-top: 2px solid #aaa;
-  padding-top: 2em;
+  padding: 2em 0;
 }
 
-ul.people, ul.sessions {
-  margin-bottom: 3em;
+ul.slots {
+  margin: 3em 0;
   border-bottom: 2px solid #aaa;
-  padding-bottom: 2em;
 }
+
+.featured {
+  background-color: #dfedff;
+}
+
+
 
 .person {
   position: relative;
