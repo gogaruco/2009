@@ -91,6 +91,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #a33400;
 }
 
+code {
+  font-family: "Lucida Sans Typewriter", "Bitstream Vera Sans", "Courier New", monospace;
+  color: #3f3f3f;
+}
 /**********/
 
 #container {
