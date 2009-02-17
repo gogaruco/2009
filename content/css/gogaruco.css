@@ -346,6 +346,15 @@ ul.dots li {
 }
 
 
+/*--------*/
+
+.badge_me td {
+  padding: 1em 0 0 1em;
+  vertical-align: middle;
+  font-size: 1.2em;
+  font-family: "Lucida Sans Typewriter", "Bitstream Vera Sans", "Courier New", monospace;
+  color: #3f3f3f;
+}
 
 
 /**********/
