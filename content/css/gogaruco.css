@@ -234,7 +234,7 @@ p.center {
 
 ul.slots > li {
   border-top: 2px solid #aaa;
-  padding: 2em 0;
+  padding: 2em 1em;
 }
 
 ul.slots {
@@ -356,6 +356,16 @@ ul.dots li {
   color: #3f3f3f;
 }
 
+div.vote {
+  margin-top: 2em;
+  border: 2px solid #aaa;
+  padding: 1em 1em;
+  background-color: #dfedff;
+}
+
+div.vote h2 {
+  margin-top: 0 !important;
+}
 
 /**********/
 
