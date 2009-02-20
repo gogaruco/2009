@@ -95,6 +95,11 @@ code {
   font-family: "Lucida Sans Typewriter", "Bitstream Vera Sans", "Courier New", monospace;
   color: #3f3f3f;
 }
+
+.bold {
+  font-weight: bold;
+}
+
 /**********/
 
 #container {
@@ -359,8 +364,10 @@ ul.dots li {
 div.vote {
   margin-top: 2em;
   border: 2px solid #aaa;
-  padding: 1em 1em;
+  padding: 1.5em 1.5em;
   background-color: #dfedff;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 
 div.vote h2 {
