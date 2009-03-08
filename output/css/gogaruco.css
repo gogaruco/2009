@@ -209,15 +209,6 @@ code {
   color: white;
 }
 
-/*
-.blue0 { background-color: #66cbf1; }
-.blue1 { background-color: #4cc2ee; }
-.blue2 { background-color: #33b9eb; }
-.blue3 { background-color: #19b1e9; }
-.blue4 { background-color: #00a8e7; }
-.blue5 { background-color: #00a8e7; }
-*/
-
 /**********/
 
 #main {
@@ -322,6 +313,31 @@ ul.slots {
 }
 
 .sponsor .logo img {
+}
+
+
+.hotels h3 {
+  font-size: 1.6em;
+}
+
+table.hotel {
+  font-size: 1.4em;
+  line-height: 1.2em;
+}
+
+.hotel th {
+  padding-top: 0.5em;
+  padding-right: 1em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.hotel td {
+  padding-top: 0.5em;
+}
+
+#map {
+  margin-top: 1em;
 }
 
 /*--------*/
