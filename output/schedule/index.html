@@ -41,24 +41,7 @@
 
     <div id="main">
       <div class="inner">
-        <p><a href="#about">About Our Technical Program</a> | <a href="#sessions">Sessions</a></p>
-
-<div class="vote">
-  <h2><a name="vote"></a>Propose and Vote for Talks</h2>
-  <p>Proposals for talks are now being accepted and the voting system is open.  If you are registered for the conference, you can head to <a href="http://vote.gogaruco.com/">vote.gogaruco.com</a> to submit a proposal or vote on proposed talks.  <span class="bold">Voting deadline is March 15.</span>  If you aren't registered but want to propose a talk you can email <a href="mailto:speak@gogaruco.com">speak@gogaruco.com</a>.  Full details are available in our <a href="/speakers/cfp.html">Call for Proposals</a>.</p>
-</div>
-
-
-<h2><a name="about"></a>About Our Technical Program</h2>
-<p>Creating a technical program for a conference involves juggling a lot of different and potentially conflicting goals. We want to have the best program possible, but what does that mean? We want to be completely open about our goals and our process, and to let you know how you can participate.</p>
-
-<p>We have two main goals in terms of who should present. First, we want to serve local residents who don't get to travel to conferences in other cities, so we decided to bring in speakers from all over who would be of interest to locals. Next, we want to take advantage of all the amazing local talent, and let visitors see just why the Bay Area rocks so hard.  That means a mix of local and, um, global speakers.</p>
-
-<p>We also feel it is time to try something different from the seemingly standard process of having an early call for proposals, followed by a lengthy review and selection by a few people behind closed doors.  That works well for a lot of conferences, but this is San Francisco, after all.  So we are constructing the program as a mix of invited talks and attendee-selected talks.  Without waiting for proposals, we have gone out and invited a lot of great speakers to give you a solid core program.  This lets us use our own editorial bias on what we think is worth talking about.  But we also want to hear about new stuff, stuff we aren't aware of, and stuff you have your own interest in.  So we're reserving roughly half the program for talks to be selected by attendee voting.</p>
-
-<p>Sometime in mid-February we'll be opening a web site where anyone can propose a talk. We'll be moderating proposals, and working with submitters to make sure the talk is appropriately targeted for the audience and conference theme. Then registered attendees will be able to vote on the talks they want to see. This gives you a say in the content of the program, and it gives presenters enough lead time to prepare good talks.  We'll have more details on this process and system soon.</p>
-
-
+        
 <h2><a name="sessions"></a>Sessions</h2>
 <ul class="slots">
   <li class="featured"><div class="session">
@@ -89,6 +72,24 @@
 </div>
 </li>
   <li><div class="session">
+  <h3><a name="aimonetti"></a>CouchDB + Ruby: Perform Like a Pr0n Star</h3>
+  <p class="speaker"><a href="/speakers/index.html#aimonetti">Matt Aimonetti</a></p>
+  <p>
+    Do you secretly dream to have a scalability like Google, easily distribute and replicate your data multiple times a day, use a fault-tolerant and schema-free solution, let your data be safely consumed by multiple partners using different interfaces? RESTful API, cloud computing and query caching sound dirty to you? This talk is for you! Come and learn about how you can use Ruby + Apache's latest document-oriented database to finally say good-bye to your old RDBMS.</p>
+
+  <p>In his talk Matt will:</p>
+
+  <ul class="dots">
+    <li>explain the difference between RDBMS, document-oriented DBMS, key-value storage systems and column-oriented DBMS</li>
+    <li>show how to rethink your data storage</li>
+    <li>demonstrate the advantages of CouchDB over RDBMS (flexibility, performance, design, reliabilty, replication)</li>
+    <li>show in details how to integrate CouchDB with Ruby using CouchRest</li>
+    <li>show how to optimize your perf by using a HTTP accelerator/load balancer</li>
+    <li>warn you about the cons of the CouchDB + Ruby combo</li>
+  </ul>
+</div>
+</li>
+  <li><div class="session">
   <h3><a name="borenstein"></a>Arduino is Rails for hardware hacking</h3>
   <p class="speaker"><a href="/speakers/index.html#borenstein">Greg Borenstein</a></p>
   <p>
@@ -100,6 +101,12 @@
   <p>
     In this talk, I'll provide a whirlwind introduction to the world of hardware hacking and demonstrate a number of projects that use RAD to integrate hardware with other well-known Ruby projects including Sinatra, Shoes, and Archaeopteryx. Ever wanted a bell to ring when you push code to GitHub? Ever wanted your artificially intelligent DJ to be able to play real drums? If so, this is the talk for you.
   </p>
+</div>
+</li>
+  <li><div class="session">
+  <h3><a name="catlin"></a>There Will Be Ruby!</h3>
+  <p class="speaker"><a href="/speakers/index.html#catlin">Hampton Catlin</a></p>
+  <p>Have you ever tried to catch a train running at a million miles an hour? Jumping into the traffic stream at Wikipedia is an insane adventure I've been going through. Exactly how do you launch a new platform that could instantly have millions of hits in a few hours? How do you do that and not spend 3 years researching? A fun tour of how I got Ruby at Wikipedia and did it with confidence, bravado, and alcohol. There will be cussing and lots of funny stories that should be highly educating and an insight into my technical philosophies.</p>
 </div>
 </li>
   <li><div class="session">
@@ -143,6 +150,23 @@
 </div>
 </li>
   <li><div class="session">
+  <h3><a name="helmkamp"></a>Webrat: Rails Acceptance Testing Evolved</h3>
+  <p class="speaker"><a href="/speakers/index.html#helmkamp">Bryan Helmkamp</a></p>
+  <p>A robust suite of acceptance tests ensures your Rails app stays
+  working giving you extreme freedom to refactor. Unfortunately,
+  traditional full-stack acceptance testing of web-based applications has centered on in-browser solutions like Selenium and Watir that immediately present challenges like speed, timing/waiting and sharing data across processes, all through a relatively clunky API designed without Ruby in mind. Getting started was troublesome, and keeping things running smoothly was a constant concern.</p>
+
+  <p>Webrat, a Ruby DSL for interaction with web applications, changes the acceptance testing ROI equation. By implementing an invisible, fast browser simulator you can use from within your test framework of choice (Test::Unit, RSpec, Shoulda or Cucumber), it sidesteps most of Selenium's drawbacks while retaining the coverage value.</p>
+
+  <p>Recently, seamless Webrat integration featured prominently in the Merb 1.0 release as the recommended approach for high level testing, a theme that will be a part of the Rails 3 push. Webrat is fast becoming the ubiquitous API for driving web applications from Ruby with it's support for different adapters like Selenium, Mechanize and Celerity.</p>
+
+  <p>This talk, delivered by the maintainer of Webrat, will describe the
+  value of acceptance testing for Rails apps, common pitfalls, and
+  Webrat's solutions. We'll look at techniques for writing maintainable acceptance tests, and maximizing their value over the lifespan of an application. Finally, we'll explore advanced techniques like applying Webrat to ease some of the pain of in-browser testing when it can't be avoided (JavaScript/AJAX, primarily).</p>
+
+</div>
+</li>
+  <li><div class="session">
   <h3><a name="kallen"></a>Magic Scaling Sprinkles</h3>
   <p class="speaker"><a href="/speakers/index.html#kallen">Nick Kallen</a></p>
   <p>Building a massively scaled, fault tolerant web service isn't easy, but it's definitely easier if you know which architectures work and which don't. In this talk we'll survey the architecture and complexities of a scalable web service including edgeware, middleware, message systems, load balancing, cache hierarchies, queueing theory, coordination primitives for distributed computation, designing for latency, inter-process communication, load balancing versus locality, write versus read throughput, non-relational datastores, database replication topologies, logging distributed computations, fault tolerance, deployment at scale, forensics, and the merits of suicide.</p>
@@ -160,6 +184,25 @@
   <p>
     This talk with introduce MacRuby and HotCocoa and show demonstrations on how to use them to quickly build OS X desktop applications with Ruby.
   </p>
+</div>
+</li>
+  <li><div class="session">
+  <h3><a name="lerche"></a>Writing Fast Ruby: Learning from Merb and Rails 3</h3>
+  <p class="speaker"><a href="/speakers/index.html#lerche">Carl Lerche</a></p>
+  <p>It has been said that Ruby is a slow language, but that is not true. Numerous Ruby projects have shown that it is possible to write fast, scalable software using Ruby. Merb, for instance, is faster than any major PHP web framework.</p>
+
+  <p>In this talk, Carl will show how to take the many available tools, such as ruby-prof, RBench, and kcachegrind, and turn any old Ruby into a speed machine. The tips and processes will be demonstrated with real world examples of optimizations that have been done to the Merb and Rails 3 projects.</p>
+
+  <p>Topics that will be covered include:</p>
+
+  <ul class="dots">
+    <li>Finding performance drains in existing Ruby code</li>
+    <li>Popular Ruby idioms that are actually quite slow</li>
+    <li>Using benchmarks to help determine the fastest approach to a problem</li>
+    <li>Understand the MRI garbage collector and how it applies to Ruby speed</li>
+    <li>Leveraging the power of the JVM through JRuby</li>
+  </ul>
+  <p>This talk is geared towards the intermediate developer and you should have a good grasp of the Ruby programming language.</p>
 </div>
 </li>
   <li><div class="session">
@@ -198,9 +241,6 @@
 </div>
 </li>
 </ul>
-
-<h2>Stay Tuned&hellip;</h2>
-<p>More sessions will be announced after voting closes on March 15th.</p>
 
       </div>
     </div>
