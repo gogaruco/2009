@@ -357,18 +357,33 @@ ul.dots li {
 
 /*--------*/
 
-#program table {
+#grid {
   width: 100%;
+}
+
+.r1 th, .r1 td { height: 1em; }
+.r2 th, .r2 td { height: 2em; }
+.r3 th, .r3 td { height: 3em; }
+.r4 th, .r4 td { height: 4em; }
+.r5 th, .r5 td { height: 5em; }
+
+#grid th {
+  width: 6%;
+  font-size: 1em;
+  text-align: right;
+  vertical-align: top;
+}
+
+#grid td {
+  width: 46%;
+  margin-top: 3px;
+  border-top: 1px solid gray;
+  padding-top: 3px;
+  padding-left: 1%;
   font-size: 1.4em;
+  vertical-align: middle;
 }
 
-#program th, #program td {
-  width: 45%;
-}
-
-#program th:first-child {
-  width: 10%;
-}
 
 
 /*--------*/
