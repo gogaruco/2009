@@ -361,30 +361,51 @@ ul.dots li {
   width: 100%;
 }
 
-.r1 th, .r1 td { height: 1em; }
-.r2 th, .r2 td { height: 2em; }
-.r3 th, .r3 td { height: 3em; }
-.r4 th, .r4 td { height: 4em; }
-.r5 th, .r5 td { height: 5em; }
+.r1 th, .r1 td { height:  25px; }
+.r2 th, .r2 td { height:  50px}
+.r3 th, .r3 td { height:  75px; }
+.r4 th, .r4 td { height: 100px; }
+.r5 th, .r5 td { height: 125px; }
 
 #grid th {
-  width: 6%;
-  font-size: 1em;
+  width: 5%;
+  padding-right: 1%;
+  font-size: 95%;
   text-align: right;
   vertical-align: top;
 }
 
 #grid td {
-  width: 46%;
-  margin-top: 3px;
-  border-top: 1px solid gray;
-  padding-top: 3px;
-  padding-left: 1%;
-  font-size: 1.4em;
+  width: 45%;
+  padding: 0 1%;
+  font-size: 95%;
+  vertical-align: top;
+}
+
+#grid thead td {
+  background-color: #918E80;
+  color: white;
+  font-weight: bold;
+  text-align: center;
   vertical-align: middle;
 }
 
+#grid th, #grid td {
+  border-bottom: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+}
 
+#grid p {
+  padding: 0;
+}
+
+.break {
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle !important;
+  background-color: #f7f6f3;
+}
 
 /*--------*/
 
