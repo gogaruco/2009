@@ -391,8 +391,21 @@ ul.dots li {
 }
 
 #grid th, #grid td {
-  border-bottom: 1px solid #dedede;
   border-right: 1px solid #dedede;
+}
+
+#grid th {
+  vertical-align: bottom;
+}
+#grid th p {
+  position: relative;
+  bottom: -8px;
+  font-size: 1.1em;
+  color: #666;
+}
+
+#grid td {
+  border-bottom: 1px solid #dedede;
 }
 
 #grid p {
@@ -404,7 +417,7 @@ ul.dots li {
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle !important;
-  background-color: #f7f6f3;
+  background-color: #efefec;
 }
 
 /*--------*/
