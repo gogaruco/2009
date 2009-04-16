@@ -236,6 +236,24 @@ p.center {
   text-align: center;
 }
 
+p.shout {
+  text-align: center;
+  font-size: 400%;
+  font-weight: bold;
+}
+
+.shout a {
+  text-decoration: underline;
+}
+
+.shout a:link, .shout a:visited {
+  color: #F04A00;
+}
+
+.shout a:hover, .shout a:active {
+  color: #A36A00;
+}
+
 /*--------*/
 
 ul.slots > li {
