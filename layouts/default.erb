@@ -12,7 +12,7 @@ filter:    erb
   <script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script>
   <![endif]-->
 </head>
-<% pages = %w( Register Speakers Schedule Lodging Sponsors Community) %>
+<% pages = %w(Speakers Schedule Sponsors Community) %>
 <body id="index">
   <div id="container">
 
@@ -27,10 +27,12 @@ filter:    erb
       </div>
       <div class="nav">
         <ul>
+          <li></li>
           <% pages.each_with_index do |page,i| -%>
             <li><a class="blue<%= i %><%= @page.path =~ %r[#{page}]i ? " current" : "" %>"
                    href="/<%= page.downcase %>/"><%= page %></a></li>
           <% end -%>
+          <li></li>
         </ul>
       </div>
     </div>
