@@ -7,7 +7,7 @@ filter:    erb
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title>Golden Gate Ruby Conference<%= (@page.title || "").empty? ? "" : " - #{@page.title}" %></title>
-  <link href="/css/gogaruco.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/2009/css/gogaruco.css" media="screen" rel="stylesheet" type="text/css" />
   <!--[if lt IE 8]>
   <script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script>
   <![endif]-->
@@ -18,7 +18,7 @@ filter:    erb
 
     <div id="header">
       <div id="banner_wrapper">
-        <a href="/"><img src="/images/gogaruco_banner.png"></a>
+        <a href="/2009/"><img src="/2009/images/gogaruco_banner.png"></a>
         <div class="bubble">
           <div class="dates">April 17-18, 2009</div>
           <div class="city">San Francisco, California</div>
@@ -30,7 +30,7 @@ filter:    erb
           <li></li>
           <% pages.each_with_index do |page,i| -%>
             <li><a class="blue<%= i %><%= @page.path =~ %r[#{page}]i ? " current" : "" %>"
-                   href="/<%= page.downcase %>/"><%= page %></a></li>
+                   href="/2009/<%= page.downcase %>/"><%= page %></a></li>
           <% end -%>
           <li></li>
         </ul>
@@ -50,10 +50,10 @@ filter:    erb
           <div>
             <h3>Platinum</h3>
             <ul>
-              <li><a href="http://pivotallabs.com/"><img src="/images/logos/pivotal.png" alt="Pivotal Labs"></a></li>
-              <li><a href="http://engineyard.com/"><img src="/images/logos/engine_yard.png" alt="Engine Yard"></a></li>
-              <li><a href="http://betalabs.yellowpages.com/"><img src="/images/logos/att.gif" alt="AT&amp;T"></a></li>
-              <li><a href="http://newrelic.com/"><img src="/images/logos/newrelic.png" alt="New Relic"></a></li>
+              <li><a href="http://pivotallabs.com/"><img src="/2009/images/logos/pivotal.png" alt="Pivotal Labs"></a></li>
+              <li><a href="http://engineyard.com/"><img src="/2009/images/logos/engine_yard.png" alt="Engine Yard"></a></li>
+              <li><a href="http://betalabs.yellowpages.com/"><img src="/2009/images/logos/att.gif" alt="AT&amp;T"></a></li>
+              <li><a href="http://newrelic.com/"><img src="/2009/images/logos/newrelic.png" alt="New Relic"></a></li>
             </ul>
           </div>
         </li>
@@ -61,7 +61,7 @@ filter:    erb
           <div>
             <h3>Gold</h3>
             <ul>
-              <li><a href="http://scribd.com/"><img src="/images/logos/scribd.png" alt="Scribd"></a></li>
+              <li><a href="http://scribd.com/"><img src="/2009/images/logos/scribd.png" alt="Scribd"></a></li>
             </ul>
           </div>
         </li>
@@ -69,8 +69,8 @@ filter:    erb
           <div>
             <h3>Silver</h3>
             <ul>
-              <li><a href="http://integrumtech.com/"><img src="/images/logos/integrum.jpg" alt="Integrum"></a></li>
-              <li><a href="http://www.jsconf2009.com/"><img src="/images/logos/jsconf.jpg" alt="JSConf 2009"></a></li>
+              <li><a href="http://integrumtech.com/"><img src="/2009/images/logos/integrum.jpg" alt="Integrum"></a></li>
+              <li><a href="http://www.jsconf2009.com/"><img src="/2009/images/logos/jsconf.jpg" alt="JSConf 2009"></a></li>
             </ul>
           </div>
         </li>
@@ -78,9 +78,9 @@ filter:    erb
           <div>
             <h3>Bronze</h3>
             <ul>
-              <li><a href="http://railskits.com/"><img src="/images/logos/railskits.png" alt="RailsKits"></a></li>
-              <li><a href="http://marakana.com/"><img src="/images/logos/marakana.png" alt="Marakana"></a></li>
-              <li><a href="http://scoutapp.com/"><img src="/images/logos/scout.gif" alt="Scout"></a></li>
+              <li><a href="http://railskits.com/"><img src="/2009/images/logos/railskits.png" alt="RailsKits"></a></li>
+              <li><a href="http://marakana.com/"><img src="/2009/images/logos/marakana.png" alt="Marakana"></a></li>
+              <li><a href="http://scoutapp.com/"><img src="/2009/images/logos/scout.gif" alt="Scout"></a></li>
               <li><a href="http://www.rubysophic.com/products/RubyRun/"><img src="/images/logos/rubyrun.png" alt="RubyRunCE"></a></li>
             </ul>
           </div>
@@ -89,12 +89,12 @@ filter:    erb
           <div>
             <h3>Media</h3>
             <ul>
-              <li><a href="http://manning.com/"><img src="/images/logos/manning.png" alt="Manning"></a></li>
-              <li><a href="http://apress.com/"><img src="/images/logos/apress.gif" alt="Apress"></a></li>
-              <li><a href="http://pragmatic.tv/"><img src="/images/logos/pragmatic-screencasts.jpg" alt="Pragmatic Screencasts"></a></li>
-              <li><a href="http://peepcode.com/"><img src="/images/logos/peepcode.png" alt="PeepCode"></a></li>
-              <li><a href="http://www.informit.com/ruby"><img src="/images/logos/aw.jpg" alt="Addison-Wesley Professional"></a></li>
-              <li><a href="http://www.wiley.com/"><img src="/images/logos/wiley.png" alt="Wiley"></a></li>
+              <li><a href="http://manning.com/"><img src="/2009/images/logos/manning.png" alt="Manning"></a></li>
+              <li><a href="http://apress.com/"><img src="/2009/images/logos/apress.gif" alt="Apress"></a></li>
+              <li><a href="http://pragmatic.tv/"><img src="/2009/images/logos/pragmatic-screencasts.jpg" alt="Pragmatic Screencasts"></a></li>
+              <li><a href="http://peepcode.com/"><img src="/2009/images/logos/peepcode.png" alt="PeepCode"></a></li>
+              <li><a href="http://www.informit.com/ruby"><img src="/2009/images/logos/aw.jpg" alt="Addison-Wesley Professional"></a></li>
+              <li><a href="http://www.wiley.com/"><img src="/2009/images/logos/wiley.png" alt="Wiley"></a></li>
             </ul>
           </div>
         </li>
@@ -104,7 +104,7 @@ filter:    erb
   </div>
 
   <div id="footer">
-    <div class="logo"><img src="/images/footer_logo.png"></div>
+    <div class="logo"><img src="/2009/images/footer_logo.png"></div>
     <div class="copy">
       &copy; 2009 golden gate ruby conference, llc &bull;
       logo design by <a href="http://codefluency.com/">bruce williams</a>

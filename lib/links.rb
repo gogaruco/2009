@@ -5,11 +5,11 @@ module LinksHelper
   
   def speaker_link(name)
     anchor = name.split(' ').last.downcase
-    %Q[<a href="/speakers/index.html##{anchor}">#{name}</a>]
+    %Q[<a href="/2009/speakers/index.html##{anchor}">#{name}</a>]
   end
   
   def session_link(anchor, title)
-    %Q[<a href="/schedule/index.html##{anchor}">#{title}</a>]
+    %Q[<a href="/2009/schedule/index.html##{anchor}">#{title}</a>]
   end
 end
 
