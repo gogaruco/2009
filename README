@@ -1,7 +1,0 @@
-Static website for gogaruco.com.  Created using Webby.
-
-$ sudo gem install webby
-$ webby
-
-Generated files available in output directory.
-
